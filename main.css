@@ -1,0 +1,29 @@
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 2%;
+    
+}
+
+.card {
+    margin-bottom: 16px;
+}
+
+
+@media screen and  (min-width:641px) and (max-width:1023px) {
+    
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+}
+
+
+@media screen and  (max-width:640px) {
+
+
+    .produtos{
+        display: block
+    }
+}

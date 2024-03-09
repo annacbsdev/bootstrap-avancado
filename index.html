@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <div class="container" style="height: 100px;">
+                <button type="button" class=" navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="img/sephora-logo-0.png" class="w-25 object-fit-cover">
+
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- carrossel -->
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/img1.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img2.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/img3.avif" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- cards -->
+
+    <div class="container mt-5" id="produtos">
+        <h2>Produtos</h2>
+        <div class="mt-5 produtos container">
+            <div class="card" style="width: 18rem;">
+                <img src="img/produto1.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Batom Vermelho</h5>
+                    <p class="card-text">R$ 159,00 <br>
+                        OU 7X DE R$ 22,71</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/produto2.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bruma Facial</h5>
+                    <p class="card-text">R$ 299,00 <br>
+                        OU 10X DE R$ 29,90</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/produto3.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Sombra líquida</h5>
+                    <p class="card-text">R$ 75,00 <br>
+                        OU 3X DE R$ 25,00</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/produto4.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lip Oil</h5>
+                    <p class="card-text">R$ 139,00 <br>
+                        OU 7X DE R$ 22,71</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/produto5.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Iluminador</h5>
+                    <p class="card-text">R$ 299,00 <br>
+                        OU 10X DE R$ 29,00</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/produto6.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lápis</h5>
+                    <p class="card-text">R$ 59,00 <br>
+                        OU 2X DE R$ 29,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
